@@ -1,0 +1,1 @@
+draw_sprite_tiled_ext(CustomLevelBG,1,timer,timer,5,5,c_white,1)
