@@ -7,8 +7,9 @@ spritejson = filename_change_ext(spriteexport,".json")
 try
 {
 	spritejson = scr_load_file(spritejson)
-	spritejson = string_replace_all(spritejson,"true","1")
-	spritejson = string_replace_all(spritejson,"#","\n")
+	//spritejson = string_replace_all(spritejson,"true","1")
+	//spritejson = string_replace_all(spritejson,"false","0")
+	//spritejson = string_replace_all(spritejson,"#","\n")
 	spritejson = json_parse(spritejson)
 	spritedata = variable_struct_get_names(spritejson.animations)
 	spriteexport = sprite_add(spriteexport,1,false,false,0,0)
@@ -26,7 +27,8 @@ try
 }
 catch(_badjson)
 {
+	badlastsprite = true
 	spritejson = -1
 	spriteexport = -1
-	show_message(_badjson.longMessage)
+	badmessage = _badjson.message + "\n\nPlease load a new animation"
 }

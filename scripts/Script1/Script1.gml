@@ -1,12 +1,3 @@
-/// file_text_open_read_all(fname)
-//
-//  Returns the contents of a given file as a multiline 
-//  string. Lines are delimited by the "#" character.
-//  If the file cannot be read, returns undefined.
-//
-//      fname       file to read, string
-//
-/// GMLscripts.com/license
 function scr_load_file(fname)
 {
    var file_buffer = buffer_load(fname);
@@ -27,3 +18,7 @@ function scr_better_clamp(_var,_min,_max)
 	}
 	return _var
 }
+#macro DARK 0
+#macro LIGHT 1
+#macro STATIC 0
+#macro RAINBOW 1

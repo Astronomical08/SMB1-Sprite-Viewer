@@ -1,0 +1,5 @@
+Add a png file in this folder and either start the file name with "dark_" or "light_"
+
+This is so the text can either be black or white
+
+You can also add "_uncolored" to the end of the filename to keep the color from being rainbow.
