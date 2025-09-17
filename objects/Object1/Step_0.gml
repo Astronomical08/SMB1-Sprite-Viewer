@@ -19,10 +19,10 @@ if keyboard_check_pressed(ord("J"))
 //{
 //	zoom++
 //}
-//if keyboard_check_pressed(ord("K"))
-//{
-//	zoom--
-//}
+if keyboard_check_pressed(ord("K"))
+{
+	dropshadow = !dropshadow
+}
 var speedanim =  variable_struct_get(animation_cur,"speed")
 if array_length(animation_cur.frames) = 1
 {

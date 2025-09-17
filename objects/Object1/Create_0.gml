@@ -9,4 +9,4 @@ xoffset = 0
 zoom = 5
 timer = 0
 dropshadow = false
-font = font_add("PublicPixel.ttf",20,false,false,32,128)
+font = font_add(working_directory + "PublicPixel.ttf",20,false,false,32,128)

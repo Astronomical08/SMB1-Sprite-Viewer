@@ -3,7 +3,7 @@ if sprite_exists(spriteexport)
 	sprite_delete(spriteexport)
 }
 spriteexport = get_open_filename(".png",".png")
-spritejson = get_open_filename(".json",".json")
+spritejson = filename_change_ext(spriteexport,".json")
 try
 {
 	spritejson = scr_load_file(spritejson)
@@ -27,5 +27,6 @@ try
 catch(_badjson)
 {
 	spritejson = -1
+	spriteexport = -1
 	show_message(_badjson.longMessage)
 }

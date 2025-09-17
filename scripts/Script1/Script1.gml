@@ -9,17 +9,10 @@
 /// GMLscripts.com/license
 function scr_load_file(fname)
 {
-    var file = file_text_open_read(argument0);
-    if (file < 0) return undefined;
-    var delim = "#";
-    var str = "";
-    while (!file_text_eof(file)) {
-        str += file_text_read_string(file);
-        str += delim;
-        file_text_readln(file);
-    }
-    file_text_close(file);
-    return str;
+   var file_buffer = buffer_load(fname);
+	var s = buffer_read(file_buffer, buffer_string);
+	buffer_delete(file_buffer);
+    return s;
 }
 
 function scr_better_clamp(_var,_min,_max)
