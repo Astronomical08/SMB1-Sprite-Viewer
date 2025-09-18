@@ -13,7 +13,9 @@ Add a png file in the themes folder and either start the file name with "dark_" 
 This is so the text can either be black or white
 You can also add "_uncolored" to the end of the filename to keep the color from being rainbow.
 # Credits
-JHDev2006/SMB1R TEAM - SMB1R and the default backgrounds
-GMLScripts.com - code base for error logs
-Dr Tieg's BF custom character - used alot for testing
-Nintendo - Creators of Mario
+## JHDev2006/SMB1R TEAM - SMB1R and the default backgrounds
+https://github.com/JHDev2006/Super-Mario-Bros.-Remastered-Public/
+## Dr Tieg's BF custom character - used alot for testing
+https://gamebanana.com/mods/620059
+## Nintendo - Creators of Mario
+https://www.nintendo.com
