@@ -5,17 +5,12 @@ function scr_load_file(fname)
 	buffer_delete(file_buffer);
     return s;
 }
-
 function scr_better_clamp(_var,_min,_max)
 {
 	if _var < _min
-	{
-		_var = _max
-	}
+		_var = _max;
 	if _var > _max
-	{
-		_var = _min
-	}
+		_var = _min;
 	return _var
 }
 #macro DARK 0

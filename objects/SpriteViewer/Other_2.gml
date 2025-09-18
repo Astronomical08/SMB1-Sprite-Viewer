@@ -10,6 +10,6 @@ for(var i = file_find_first(working_directory + "themes/*.png",0); i != "";i = f
 	if string_ends_with(i,"_uncolored.png")
 		struct.coloring =  STATIC;
 	else
-		struct.coloring =  RAINBOW;
+		struct.coloring =  RAINBOW;c
 	array_push(themes,struct)
 }
