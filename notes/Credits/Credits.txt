@@ -1,3 +1,4 @@
 gmlscripts.com - base for exporting logs
 The Super Mario Bros Remastered Crew - Default Background + making SMB1R
+Nintendo - Creators of Mario
 Myself - programming
