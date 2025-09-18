@@ -21,7 +21,7 @@ draw_text(view_wport[0] - 20,view_hport[0]/10,(animationlist[scr_better_clamp(cu
 draw_set_halign(fa_left)
 draw_text(20,view_hport[0]/10,(animationlist[scr_better_clamp(currentanim_index - 1,0,array_length(animationlist) - 1)]))
 draw_set_alpha(1)
-draw_text_transformed(20,view_hport[0] - 90,"Credits:\n\nJHDev2006/SMB1R TEAM - SMB1R and the default backgrounds\nGMLScripts.com - code base for error logs\nDr Tieg's BF custom character - used alot for testing\nNintendo - Creators of Mario\n\nControls:\n\nJ/L - scroll through animations\nW/S - change between backgrounds\nK - toggle dropshadow",0.5,0.5,0)
+draw_text_transformed(20,view_hport[0] - 90,"Credits:\n\nJHDev2006/SMB1R TEAM - SMB1R and the default backgrounds\nDr Tieg's BF custom character - used alot for testing\nNintendo - Creators of Mario\n\nControls:\n\nJ/L - scroll through animations\nW/S - change between backgrounds\nK - toggle dropshadow",0.5,0.5,0)
 draw_set_color(c_white)
 	if dropshadow == 1
 		draw_sprite_part_ext(cursprite,0,animation_cur.frames[floor(currentframe)][0],animation_cur.frames[floor(currentframe)][1],animation_cur.frames[floor(currentframe)][2],animation_cur.frames[floor(currentframe)][3],view_wport/2 - (animation_cur.frames[floor(currentframe)][2] * 2) + xoffset,view_hport/1.9 - animation_cur.frames[floor(currentframe)][3],5,5,c_black,1);

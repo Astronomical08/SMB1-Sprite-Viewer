@@ -1,6 +1,6 @@
 if sprite_exists(cursprite)
 	sprite_delete(cursprite);
-cursprite = get_open_filename(".png",".png")
+cursprite =filename_change_ext(get_open_filename(".png",".png"),".png")
 spritejson = filename_change_ext(cursprite,".json")
 try
 {
